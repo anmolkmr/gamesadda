@@ -1,0 +1,235 @@
+<!DOCTYPE html >
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        @font-face {
+        font-family: 'f1'; 
+        src: url(/font/MW.otf); 
+
+        i:hover{
+          cursor: pointer;
+        }
+    }
+    </style>
+    <title>Feedback</title>
+</head>
+<body style="background-color: aliceblue; color: black;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-start">
+                <a class="navbar-brand" href="#">
+                  <img src="/images/logodark.png" alt="Bootstrap" width="60" height="54">
+                </a>
+                <a style="font-size: xx-large; font-family:f1;" class="navbar-brand " href="index.html">GamesAdda</a>
+              </div>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class =  "mx-auto" style="margin-left: 100px;">
+                <form  class="d-flex align-self-center" role="search">
+                    <input style="width: 300px; ;"  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button  class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a style="font-size: large;" class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-size: large;" class="nav-link" href="gamelib.html">GamesLibrary</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-size: large;" class="nav-link" href="/layout/tg.html">TopGames</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="font-size: large;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul  class="dropdown-menu dropdown-menu-end">
+                  <li><a  class="dropdown-item" href="htp.html">How to Play</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <h1 style = "text-align: center; margin-top: 10px;">Your Feedback</h1><hr>
+      
+      <p style = "text-align: center;">We would like your feedback to improve our website.<br><br>
+      What is your opinion of this page.</p>
+
+
+      <div class = "row justify-content-center" >
+        <div class = "col-1"><i id = "l" class="bi bi-emoji-laughing" style="font-size: 100px;" onclick="fun(this)" ></i></div>
+        <div class = "col-1"><i id = "s" class="bi bi-emoji-smile" style="font-size: 100px;" onclick="fun(this)"></i></div>
+        <div class = "col-1"><i id = "f" class="bi bi-emoji-frown" style="font-size: 100px;" onclick="fun(this)"></i></div>
+        <div class = "col-1"><i id = "n" class="bi bi-emoji-neutral" style="font-size: 100px;" onclick="fun(this)"></i></div>
+        <div class = "col-1"><i id = "a" class="bi bi-emoji-angry" style="font-size: 100px;" onclick="fun(this)"></i></div>
+      </div>
+
+      <hr>
+      <p  style = "text-align: center;;">Please select your feedback category below</p>
+      <div class = "row justify-content-center mb-3" style="margin-left: 190px">
+        <div class = "col-3"><button class = "form-control" style="width: 200px; height:100px">Suggestion</button></div>
+        <div class = "col-3"><button class = "form-control" style="width: 200px; height:100px">Something is not quite right</button></div>
+        <div class = "col-3"><button class = "form-control" style="width: 200px; height:100px">Compliment</button></div>
+      </div>
+      <br><br>
+      <hr><br>
+      <p style="text-align: center;">Please leave your feedback below.</p>
+      <textarea type = "text" placeholder="Type Here" style="background-color: white; color:black; margin-left: 500px; width: 600px; height: 200px; border-radius: 5px; margin-bottom: 10px;"></textarea><br>
+
+      <button class= "btn btn-primary mt-3 mb-3" style="border-radius: 23px; margin-left: 870px; width: 15%;">Send</button>
+
+    <footer class="bg-body-tertiary text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">  
+            <div class = "row" style = "margin-left: 100px;">
+                <div class = "col-2 mt-2">
+                     <img src="/images/logodark.png" alt="Logo" width="70" height="70">
+                </div>
+                 <div class = "col-2">
+                    <p style="font-size: 50px; font-family:f1;">GamesAdda</p>
+                </div>
+            </div>
+          <p>
+            GamesAdda is an online platform where children can play their favourite games and increase their memorization power too with fun.
+          </p>
+        </div>
+  
+  
+  
+        <!--Grid column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contents
+            </h6>
+            <p>
+              <a href="../index.html" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="gamelib.html" class="text-reset">Game Library</a>
+            </p>
+            <p>
+              <a href="/layout/tg.html" class="text-reset">Top Games</a>
+            </p>
+            <p>
+              <a href="feedback.html" class="text-reset">Support</a>
+            </p>
+          </div>
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Ghaziabad,UP,INDIA</p>
+            <p><i class="fas fa-envelope me-3 text-secondary"></i>gamesAdda@gmail.com</p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i>+91 7906693378</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i>+91 7983543575</p>
+          </div>
+      </div>
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="bg-body-secondary text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="..">GamesAdda.com</a>
+    </div>
+    <!-- Copyright -->
+      </footer>
+
+    <script>
+      let clicks = {};
+        function fun(x){
+          if(Object.keys(clicks).length != 0){
+            if(x.id in clicks){
+              document.getElementById(x.id).setAttribute('class',clicks[x.id]);
+              let k = x.id;
+            clicks={};
+            }
+            
+            return;
+          }
+          
+          clicks[x.id] = document.getElementById(x.id).getAttribute('class');
+          let n = document.getElementById(x.id).getAttribute('class') + "-fill";
+          document.getElementById(x.id).setAttribute('class',n);
+          console.log(x.class);
+        }
+    </script>
+</body>
+</html>
